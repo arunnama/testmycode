@@ -9,10 +9,11 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,FaveButtonDelegate {
     
     @IBOutlet weak var messageLabel:UILabel!
 
+    @IBOutlet weak var okayButton: FaveButton!
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
@@ -57,6 +58,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             
             // Move the message label to the top view
             view.bringSubview(toFront: messageLabel)
+            view.bringSubview(toFront: okayButton)
             
             // Initialize QR Code Frame to highlight the QR code
             qrCodeFrameView = UIView()
@@ -107,7 +109,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 captureSession?.stopRunning();
                 print("Stopped the QR CODE SCANNING");
                 parQRCode(withQRCodeString :metadataObj.stringValue);
-                
+                okayButton.sendActions(for: .touchUpInside)
                 
             }
         }
@@ -213,6 +215,29 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         return nil
     }
     
+    
+    
+    let colors = [
+        DotColors(first: color(0x7DC2F4), second: color(0xE2264D)),
+        DotColors(first: color(0xF8CC61), second: color(0x9BDFBA)),
+        DotColors(first: color(0xAF90F4), second: color(0x90D1F9)),
+        DotColors(first: color(0xE9A966), second: color(0xF8C852)),
+        DotColors(first: color(0xF68FA7), second: color(0xF6A2B8))
+    ]
+    
+    func faveButton(_ faveButton: FaveButton, didSelected selected: Bool){
+        
+        
+        
+    }
+    
+    func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?{
+        if( faveButton === okayButton || faveButton === okayButton){
+            return colors
+        }
+        return nil
+    }
+
    
 }
 

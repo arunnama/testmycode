@@ -21,8 +21,9 @@
 		C914C7741F7389B000AA87B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C914C7731F7389B000AA87B0 /* Assets.xcassets */; };
 		C914C77A1F738A5600AA87B0 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7791F738A5600AA87B0 /* FavViewController.swift */; };
 		C914C77C1F738A7500AA87B0 /* FaveButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C77B1F738A7500AA87B0 /* FaveButton.framework */; };
-		C914C77D1F738B3400AA87B0 /* FaveButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C77B1F738A7500AA87B0 /* FaveButton.framework */; };
 		C914C77F1F738B7300AA87B0 /* FavMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C914C77E1F738B7300AA87B0 /* FavMain.storyboard */; };
+		C914C7811F73952200AA87B0 /* FaveButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C77B1F738A7500AA87B0 /* FaveButton.framework */; };
+		C914C7821F73952200AA87B0 /* FaveButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C914C77B1F738A7500AA87B0 /* FaveButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */; };
 		F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB21A21DD6D00E2F44E /* ViewController.swift */; };
 		F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB41A21DD6D00E2F44E /* Main.storyboard */; };
@@ -40,6 +41,20 @@
 			remoteInfo = QRReaderDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C914C7831F73952200AA87B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C914C7821F73952200AA87B0 /* FaveButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C914C7591F73656D00AA87B0 /* ParseQRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseQRCode.swift; sourceTree = "<group>"; };
@@ -75,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C914C77D1F738B3400AA87B0 /* FaveButton.framework in Frameworks */,
+				C914C7811F73952200AA87B0 /* FaveButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +139,17 @@
 			path = FaveButton;
 			sourceTree = "<group>";
 		};
+		C914C7841F739BB100AA87B0 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
 		F4973AA21A21DD6D00E2F44E = {
 			isa = PBXGroup;
 			children = (
+				C914C7841F739BB100AA87B0 /* TabView */,
 				C914C76F1F73898500AA87B0 /* FaveButton */,
 				C914C75D1F73896000AA87B0 /* Source */,
 				F4973AAD1A21DD6D00E2F44E /* QRReaderDemo */,
@@ -196,6 +219,7 @@
 				F4973AA71A21DD6D00E2F44E /* Sources */,
 				F4973AA81A21DD6D00E2F44E /* Frameworks */,
 				F4973AA91A21DD6D00E2F44E /* Resources */,
+				C914C7831F73952200AA87B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
