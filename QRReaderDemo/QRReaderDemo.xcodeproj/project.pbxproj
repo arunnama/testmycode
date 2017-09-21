@@ -56,6 +56,7 @@
 		C914C7E41F73A90400AA87B0 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D11F73A90400AA87B0 /* Sparkle.png */; };
 		C914C7E51F73A90400AA87B0 /* tvOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */; };
 		C914C80B1F73D6C400AA87B0 /* Gemalto (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */; };
+		C914C82B1F73DA9A00AA87B0 /* GlitchLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C82A1F73DA9A00AA87B0 /* GlitchLabel.swift */; };
 		F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */; };
 		F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB21A21DD6D00E2F44E /* ViewController.swift */; };
 		F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB41A21DD6D00E2F44E /* Main.storyboard */; };
@@ -148,6 +149,7 @@
 		C914C7D11F73A90400AA87B0 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
 		C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
 		C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gemalto (1).png"; sourceTree = "<group>"; };
+		C914C82A1F73DA9A00AA87B0 /* GlitchLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlitchLabel.swift; sourceTree = "<group>"; };
 		F4973AAB1A21DD6D00E2F44E /* QRReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4973AAF1A21DD6D00E2F44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -433,9 +435,18 @@
 			path = Particles;
 			sourceTree = "<group>";
 		};
+		C914C81B1F73DA8200AA87B0 /* GlitchLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C914C82A1F73DA9A00AA87B0 /* GlitchLabel.swift */,
+			);
+			path = GlitchLabel;
+			sourceTree = "<group>";
+		};
 		F4973AA21A21DD6D00E2F44E = {
 			isa = PBXGroup;
 			children = (
+				C914C81B1F73DA8200AA87B0 /* GlitchLabel */,
 				C914C7BD1F73A90400AA87B0 /* LTMorphingLabel */,
 				C914C7BC1F73A8F700AA87B0 /* New Group */,
 				C914C7BA1F73A58300AA87B0 /* LandingViewController.swift */,
@@ -635,6 +646,7 @@
 				C914C7DF1F73A90400AA87B0 /* LTMorphingLabel.swift in Sources */,
 				C914C7D71F73A90400AA87B0 /* LTEmitterView.swift in Sources */,
 				F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */,
+				C914C82B1F73DA9A00AA87B0 /* GlitchLabel.swift in Sources */,
 				C914C7DE1F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift in Sources */,
 				C914C7691F73896000AA87B0 /* Constraints+.swift in Sources */,
 				C914C76E1F73896000AA87B0 /* Spark.swift in Sources */,

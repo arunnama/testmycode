@@ -61,7 +61,6 @@
                         <constraints>
                             <constraint firstItem="el9-35-rj6" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="4R6-SB-P8J"/>
                             <constraint firstItem="Th3-eq-eDK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7fT-LX-4hE"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="el9-35-rj6" secondAttribute="bottom" constant="20" id="C8K-Ks-KfT"/>
                             <constraint firstItem="el9-35-rj6" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="OY5-HK-hZo"/>
                             <constraint firstAttribute="bottom" secondItem="el9-35-rj6" secondAttribute="bottom" constant="20" symbolic="YES" id="R4i-19-F5J"/>
                             <constraint firstItem="Th3-eq-eDK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SGM-Wx-Ls3"/>
@@ -162,8 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digitize your world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-2U-Ung" customClass="LTMorphingLabel" customModule="QRReaderDemo" customModuleProvider="target">
-                                <rect key="frame" x="111" y="166" width="152" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digitize your world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-2U-Ung" customClass="GlitchLabel" customModule="QRReaderDemo" customModuleProvider="target">
+                                <rect key="frame" x="26" y="71" width="323" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -180,6 +179,13 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="bPJ-8T-eNl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digitialize the your expericence every wherer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59x-tt-Cxc" customClass="LTMorphingLabel" customModule="QRReaderDemo" customModuleProvider="target">
+                                <rect key="frame" x="26" y="262" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -190,7 +196,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="fgI-Kg-0au"/>
                     <connections>
-                        <outlet property="label" destination="pkO-2U-Ung" id="Jwt-UH-u5n"/>
+                        <outlet property="label" destination="59x-tt-Cxc" id="z4M-bG-W9H"/>
+                        <outlet property="labelTest" destination="pkO-2U-Ung" id="1mA-Fq-PS9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20I-yh-dyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -202,6 +209,6 @@
         <image name="like" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hSU-oY-f7k"/>
+        <segue reference="bPJ-8T-eNl"/>
     </inferredMetricsTieBreakers>
 </document>

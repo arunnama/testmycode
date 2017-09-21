@@ -17,7 +17,10 @@
 import UIKit
 
 class LandingViewController : UIViewController, LTMorphingLabelDelegate,UIViewControllerTransitioningDelegate {
+    @IBOutlet weak var labelTest: GlitchLabel!
   
+  
+    @IBOutlet fileprivate var label: LTMorphingLabel!
     fileprivate var i = -1
     fileprivate var textArray = [
         "What is design?",
@@ -65,7 +68,7 @@ class LandingViewController : UIViewController, LTMorphingLabelDelegate,UIViewCo
         return nil
     }
     
-    @IBOutlet fileprivate var label: LTMorphingLabel!
+   
     
     @IBAction func changeText(_ sender: AnyObject) {
         label.text = text
