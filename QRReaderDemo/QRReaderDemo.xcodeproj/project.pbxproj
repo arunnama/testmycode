@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C90C8FB71F743081006087EF /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C8311F741CFB00AA87B0 /* Chameleon.framework */; };
 		C90C8FB81F743081006087EF /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C914C8311F741CFB00AA87B0 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C90C8FBA1F7439C6006087EF /* id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = C90C8FB91F7439C6006087EF /* id-card.png */; };
 		C914C75A1F73656D00AA87B0 /* ParseQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7591F73656D00AA87B0 /* ParseQRCode.swift */; };
 		C914C75C1F73842600AA87B0 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C75B1F73842600AA87B0 /* SuccesViewController.swift */; };
 		C914C7671F73896000AA87B0 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C75E1F73896000AA87B0 /* FaveButton.swift */; };
@@ -95,6 +96,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C90C8FB91F7439C6006087EF /* id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "id-card.png"; sourceTree = "<group>"; };
 		C914C7591F73656D00AA87B0 /* ParseQRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseQRCode.swift; sourceTree = "<group>"; };
 		C914C75B1F73842600AA87B0 /* SuccesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccesViewController.swift; path = ../SuccesViewController.swift; sourceTree = "<group>"; };
 		C914C75E1F73896000AA87B0 /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 		F4973AA21A21DD6D00E2F44E = {
 			isa = PBXGroup;
 			children = (
+				C90C8FB91F7439C6006087EF /* id-card.png */,
 				C914C82E1F741B4700AA87B0 /* colorTheme */,
 				C914C82C1F7402F900AA87B0 /* qr-code.png */,
 				C914C81B1F73DA8200AA87B0 /* GlitchLabel */,
@@ -619,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90C8FBA1F7439C6006087EF /* id-card.png in Resources */,
 				C914C7E51F73A90400AA87B0 /* tvOS-Info.plist in Resources */,
 				C914C7E31F73A90400AA87B0 /* Smoke.png in Resources */,
 				C914C7B91F73A21600AA87B0 /* Proxima Nova Regular.otf in Resources */,
