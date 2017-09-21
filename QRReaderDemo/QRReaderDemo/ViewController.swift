@@ -15,6 +15,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
 
     @IBOutlet weak var okayButton: FaveButton!
     
+    @IBOutlet weak var btnClose: UIButton!
+    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
@@ -60,6 +62,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
             // Move the message label to the top view
             view.bringSubview(toFront: messageLabel)
             view.bringSubview(toFront: okayButton)
+            view.bringSubview(toFront: btnClose)
             
             // Initialize QR Code Frame to highlight the QR code
             qrCodeFrameView = UIView()

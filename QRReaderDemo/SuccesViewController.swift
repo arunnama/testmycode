@@ -10,9 +10,19 @@ import UIKit
 
 class SuccesViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var IDImage: UIImageView!
+    @IBOutlet weak var name: UILabel!
+
+    @IBOutlet weak var IDValue: UILabel!
+    
+    @IBOutlet weak var expDateValue: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -31,5 +41,34 @@ class SuccesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    func saveBase64StringToPDF(_ base64String: String) {
+        
+        guard
+            var documentsURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last,
+            let convertedData = Data(base64Encoded: base64String)
+            else {
+                //handle error when getting documents URL
+                return
+        }
+        
+        //name your file however you prefer
+        documentsURL.appendPathComponent("yourFileName.pdf")
+        
+        do {
+            try convertedData.write(to: documentsURL)
+        } catch {
+            //handle write error here
+        }
+        
+        if let pdf = Bundle.main.url(forResource: "Filename", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+            let req = NSURLRequest(url: pdf)
+           // webView.loadRequest(req as URLRequest)
+        }
+        //if you want to get a quick output of where your
+        //file was saved from the simulator on your machine
+        //just print the documentsURL and go there in Finder
+        print(documentsURL)
+    }
 }

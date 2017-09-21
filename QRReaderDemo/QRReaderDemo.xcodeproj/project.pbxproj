@@ -57,6 +57,11 @@
 		C914C7E51F73A90400AA87B0 /* tvOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */; };
 		C914C80B1F73D6C400AA87B0 /* Gemalto (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */; };
 		C914C82B1F73DA9A00AA87B0 /* GlitchLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C82A1F73DA9A00AA87B0 /* GlitchLabel.swift */; };
+		C914C82D1F7402F900AA87B0 /* qr-code.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C82C1F7402F900AA87B0 /* qr-code.png */; };
+		C914C8301F741B6500AA87B0 /* ColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C82F1F741B6500AA87B0 /* ColorSettings.swift */; };
+		C914C8321F741CFB00AA87B0 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C8311F741CFB00AA87B0 /* Chameleon.framework */; };
+		C914C8331F74201100AA87B0 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914C8311F741CFB00AA87B0 /* Chameleon.framework */; };
+		C914C8341F74201100AA87B0 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C914C8311F741CFB00AA87B0 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */; };
 		F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB21A21DD6D00E2F44E /* ViewController.swift */; };
 		F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB41A21DD6D00E2F44E /* Main.storyboard */; };
@@ -83,6 +88,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C914C7821F73952200AA87B0 /* FaveButton.framework in Embed Frameworks */,
+				C914C8341F74201100AA87B0 /* Chameleon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +156,9 @@
 		C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
 		C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gemalto (1).png"; sourceTree = "<group>"; };
 		C914C82A1F73DA9A00AA87B0 /* GlitchLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlitchLabel.swift; sourceTree = "<group>"; };
+		C914C82C1F7402F900AA87B0 /* qr-code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "qr-code.png"; path = "Resources/qr-code.png"; sourceTree = "<group>"; };
+		C914C82F1F741B6500AA87B0 /* ColorSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSettings.swift; sourceTree = "<group>"; };
+		C914C8311F741CFB00AA87B0 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chameleon.framework; sourceTree = "<group>"; };
 		F4973AAB1A21DD6D00E2F44E /* QRReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4973AAF1A21DD6D00E2F44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C914C7811F73952200AA87B0 /* FaveButton.framework in Frameworks */,
+				C914C8321F741CFB00AA87B0 /* Chameleon.framework in Frameworks */,
+				C914C8331F74201100AA87B0 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +454,20 @@
 			path = GlitchLabel;
 			sourceTree = "<group>";
 		};
+		C914C82E1F741B4700AA87B0 /* colorTheme */ = {
+			isa = PBXGroup;
+			children = (
+				C914C8311F741CFB00AA87B0 /* Chameleon.framework */,
+				C914C82F1F741B6500AA87B0 /* ColorSettings.swift */,
+			);
+			name = colorTheme;
+			sourceTree = "<group>";
+		};
 		F4973AA21A21DD6D00E2F44E = {
 			isa = PBXGroup;
 			children = (
+				C914C82E1F741B4700AA87B0 /* colorTheme */,
+				C914C82C1F7402F900AA87B0 /* qr-code.png */,
 				C914C81B1F73DA8200AA87B0 /* GlitchLabel */,
 				C914C7BD1F73A90400AA87B0 /* LTMorphingLabel */,
 				C914C7BC1F73A8F700AA87B0 /* New Group */,
@@ -608,6 +630,7 @@
 				C914C7AE1F739CCE00AA87B0 /* Info.plist in Resources */,
 				C914C7B31F739D3400AA87B0 /* TabMain.storyboard in Resources */,
 				C914C7E11F73A90400AA87B0 /* Fire.png in Resources */,
+				C914C82D1F7402F900AA87B0 /* qr-code.png in Resources */,
 				C914C7E21F73A90400AA87B0 /* Fragment.png in Resources */,
 				C914C80B1F73D6C400AA87B0 /* Gemalto (1).png in Resources */,
 				F4973ABB1A21DD6D00E2F44E /* LaunchScreen.xib in Resources */,
@@ -657,6 +680,7 @@
 				C914C7AD1F739CCE00AA87B0 /* YALTabBarItem.m in Sources */,
 				C914C7DA1F73A90400AA87B0 /* LTMorphingLabel+Burn.swift in Sources */,
 				C914C7AA1F739CCE00AA87B0 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				C914C8301F741B6500AA87B0 /* ColorSettings.swift in Sources */,
 				C914C75C1F73842600AA87B0 /* SuccesViewController.swift in Sources */,
 				C914C75A1F73656D00AA87B0 /* ParseQRCode.swift in Sources */,
 				C914C7681F73896000AA87B0 /* FaveIcon.swift in Sources */,
@@ -795,6 +819,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QRReaderDemoTests",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = QRReaderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -813,6 +838,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QRReaderDemoTests",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = QRReaderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

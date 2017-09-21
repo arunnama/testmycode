@@ -15,11 +15,13 @@
 //
 
 import UIKit
+import Chameleon
 
 class LandingViewController : UIViewController, LTMorphingLabelDelegate,UIViewControllerTransitioningDelegate {
     @IBOutlet weak var labelTest: GlitchLabel!
   
-  
+    
+
     @IBOutlet fileprivate var label: LTMorphingLabel!
     fileprivate var i = -1
     fileprivate var textArray = [
@@ -37,22 +39,28 @@ class LandingViewController : UIViewController, LTMorphingLabelDelegate,UIViewCo
     fileprivate var text: String {
         i = i >= textArray.count - 1 ? 0 : i + 1
         return textArray[i]
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        label.delegate = self
+       
+        self.view.backgroundColor = UIColor(gradientStyle:UIGradientStyle.topToBottom, withFrame:self.view.bounds, andColors:[UIColor.flatOrange,UIColor.flatOrangeDark])
+       // label.delegate = self
         if let effect = LTMorphingEffect(rawValue: 2) {
-            label.morphingEffect = effect
+          //  label.morphingEffect = effect
            // changeText(sender)
         }
 
+        
                
         // Buttton 
         
         
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+            self.labelTest.stopAnimcation();
+        })
         
         
         

@@ -22,6 +22,7 @@ open class GlitchLabel: UILabel {
     @IBInspectable open var drawScanline: Bool = true
     
     open var blendMode: CGBlendMode = .lighten
+    var timer:Timer? = nil;
     
     fileprivate var channel: Int = 0
     fileprivate var amplitude: Double = 2.5
@@ -78,6 +79,14 @@ open class GlitchLabel: UILabel {
             }
         }
     }
+    
+    func stopAnimcation()
+    {
+        
+        timer?.invalidate();
+        
+    }
+    
     
     fileprivate func getChannelsImage(_ x1: CGFloat, x2: CGFloat, x3: CGFloat) -> UIImage {
         let redImage = getRedImage(bounds)
@@ -179,13 +188,14 @@ open class GlitchLabel: UILabel {
     }
     
     fileprivate func setTimer() {
-        let timer = Timer(timeInterval: 1/30.0,
+        
+        timer = Timer(timeInterval: 1/30.0,
                            target: self,
                            selector: #selector(GlitchLabel.tick),
                            userInfo: nil,
                            repeats: true)
-        
-        RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)
+       
+        RunLoop.current.add(timer!, forMode: RunLoopMode.defaultRunLoopMode)
     }
     
     fileprivate func random() -> Double {
