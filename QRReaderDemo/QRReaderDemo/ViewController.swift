@@ -14,6 +14,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
     @IBOutlet weak var messageLabel:UILabel!
 
     @IBOutlet weak var okayButton: FaveButton!
+    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
@@ -23,7 +24,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        okayButton.isHidden=true;
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -109,6 +110,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
                 captureSession?.stopRunning();
                 print("Stopped the QR CODE SCANNING");
                 parQRCode(withQRCodeString :metadataObj.stringValue);
+                okayButton.isHidden=false;
                 okayButton.sendActions(for: .touchUpInside)
                 
             }
@@ -185,12 +187,17 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
                     return
                 }
                 print("The ID is: \(todoID)")
+                
+                self.showNewScreenToSendRequest(dictData:receivedTodo)
+                
+                
             } catch  {
                 print("error parsing response from POST on /todos")
                 return
             }
         }
         task.resume()
+        
         
         
         

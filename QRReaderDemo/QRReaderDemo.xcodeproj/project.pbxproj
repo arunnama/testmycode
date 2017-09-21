@@ -37,6 +37,25 @@
 		C914C7B81F73A21600AA87B0 /* Code Pro LC.otf in Resources */ = {isa = PBXBuildFile; fileRef = C914C7B61F73A21600AA87B0 /* Code Pro LC.otf */; };
 		C914C7B91F73A21600AA87B0 /* Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C914C7B71F73A21600AA87B0 /* Proxima Nova Regular.otf */; };
 		C914C7BB1F73A58300AA87B0 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7BA1F73A58300AA87B0 /* LandingViewController.swift */; };
+		C914C7D41F73A90400AA87B0 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7BF1F73A90400AA87B0 /* LTCharacterDiffResult.swift */; };
+		C914C7D51F73A90400AA87B0 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C01F73A90400AA87B0 /* LTCharacterLimbo.swift */; };
+		C914C7D61F73A90400AA87B0 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C11F73A90400AA87B0 /* LTEasing.swift */; };
+		C914C7D71F73A90400AA87B0 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C21F73A90400AA87B0 /* LTEmitterView.swift */; };
+		C914C7D81F73A90400AA87B0 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C31F73A90400AA87B0 /* LTMorphingEffect.swift */; };
+		C914C7D91F73A90400AA87B0 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C41F73A90400AA87B0 /* LTMorphingLabel+Anvil.swift */; };
+		C914C7DA1F73A90400AA87B0 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C51F73A90400AA87B0 /* LTMorphingLabel+Burn.swift */; };
+		C914C7DB1F73A90400AA87B0 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C61F73A90400AA87B0 /* LTMorphingLabel+Evaporate.swift */; };
+		C914C7DC1F73A90400AA87B0 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C71F73A90400AA87B0 /* LTMorphingLabel+Fall.swift */; };
+		C914C7DD1F73A90400AA87B0 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C81F73A90400AA87B0 /* LTMorphingLabel+Pixelate.swift */; };
+		C914C7DE1F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7C91F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift */; };
+		C914C7DF1F73A90400AA87B0 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7CB1F73A90400AA87B0 /* LTMorphingLabel.swift */; };
+		C914C7E01F73A90400AA87B0 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C7CC1F73A90400AA87B0 /* LTStringDiffResult.swift */; };
+		C914C7E11F73A90400AA87B0 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C7CE1F73A90400AA87B0 /* Fire.png */; };
+		C914C7E21F73A90400AA87B0 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C7CF1F73A90400AA87B0 /* Fragment.png */; };
+		C914C7E31F73A90400AA87B0 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D01F73A90400AA87B0 /* Smoke.png */; };
+		C914C7E41F73A90400AA87B0 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D11F73A90400AA87B0 /* Sparkle.png */; };
+		C914C7E51F73A90400AA87B0 /* tvOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */; };
+		C914C80B1F73D6C400AA87B0 /* Gemalto (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */; };
 		F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */; };
 		F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB21A21DD6D00E2F44E /* ViewController.swift */; };
 		F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB41A21DD6D00E2F44E /* Main.storyboard */; };
@@ -109,6 +128,26 @@
 		C914C7B61F73A21600AA87B0 /* Code Pro LC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Code Pro LC.otf"; sourceTree = "<group>"; };
 		C914C7B71F73A21600AA87B0 /* Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Regular.otf"; sourceTree = "<group>"; };
 		C914C7BA1F73A58300AA87B0 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		C914C7BF1F73A90400AA87B0 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		C914C7C01F73A90400AA87B0 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		C914C7C11F73A90400AA87B0 /* LTEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTEasing.swift; sourceTree = "<group>"; };
+		C914C7C21F73A90400AA87B0 /* LTEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTEmitterView.swift; sourceTree = "<group>"; };
+		C914C7C31F73A90400AA87B0 /* LTMorphingEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTMorphingEffect.swift; sourceTree = "<group>"; };
+		C914C7C41F73A90400AA87B0 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		C914C7C51F73A90400AA87B0 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		C914C7C61F73A90400AA87B0 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		C914C7C71F73A90400AA87B0 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		C914C7C81F73A90400AA87B0 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		C914C7C91F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		C914C7CA1F73A90400AA87B0 /* LTMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMorphingLabel.h; sourceTree = "<group>"; };
+		C914C7CB1F73A90400AA87B0 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTMorphingLabel.swift; sourceTree = "<group>"; };
+		C914C7CC1F73A90400AA87B0 /* LTStringDiffResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTStringDiffResult.swift; sourceTree = "<group>"; };
+		C914C7CE1F73A90400AA87B0 /* Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire.png; sourceTree = "<group>"; };
+		C914C7CF1F73A90400AA87B0 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
+		C914C7D01F73A90400AA87B0 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
+		C914C7D11F73A90400AA87B0 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
+		C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gemalto (1).png"; sourceTree = "<group>"; };
 		F4973AAB1A21DD6D00E2F44E /* QRReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4973AAF1A21DD6D00E2F44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -353,9 +392,52 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		C914C7BC1F73A8F700AA87B0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		C914C7BD1F73A90400AA87B0 /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C914C7BF1F73A90400AA87B0 /* LTCharacterDiffResult.swift */,
+				C914C7C01F73A90400AA87B0 /* LTCharacterLimbo.swift */,
+				C914C7C11F73A90400AA87B0 /* LTEasing.swift */,
+				C914C7C21F73A90400AA87B0 /* LTEmitterView.swift */,
+				C914C7C31F73A90400AA87B0 /* LTMorphingEffect.swift */,
+				C914C7C41F73A90400AA87B0 /* LTMorphingLabel+Anvil.swift */,
+				C914C7C51F73A90400AA87B0 /* LTMorphingLabel+Burn.swift */,
+				C914C7C61F73A90400AA87B0 /* LTMorphingLabel+Evaporate.swift */,
+				C914C7C71F73A90400AA87B0 /* LTMorphingLabel+Fall.swift */,
+				C914C7C81F73A90400AA87B0 /* LTMorphingLabel+Pixelate.swift */,
+				C914C7C91F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift */,
+				C914C7CA1F73A90400AA87B0 /* LTMorphingLabel.h */,
+				C914C7CB1F73A90400AA87B0 /* LTMorphingLabel.swift */,
+				C914C7CC1F73A90400AA87B0 /* LTStringDiffResult.swift */,
+				C914C7CD1F73A90400AA87B0 /* Particles */,
+				C914C7D21F73A90400AA87B0 /* tvOS-Info.plist */,
+			);
+			path = LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+		C914C7CD1F73A90400AA87B0 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C914C7CE1F73A90400AA87B0 /* Fire.png */,
+				C914C7CF1F73A90400AA87B0 /* Fragment.png */,
+				C914C7D01F73A90400AA87B0 /* Smoke.png */,
+				C914C7D11F73A90400AA87B0 /* Sparkle.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		F4973AA21A21DD6D00E2F44E = {
 			isa = PBXGroup;
 			children = (
+				C914C7BD1F73A90400AA87B0 /* LTMorphingLabel */,
+				C914C7BC1F73A8F700AA87B0 /* New Group */,
 				C914C7BA1F73A58300AA87B0 /* LandingViewController.swift */,
 				C914C7B11F739CF400AA87B0 /* QRReaderDemo-Bridging-Header.h */,
 				C914C7B41F73A21600AA87B0 /* Resources */,
@@ -387,6 +469,7 @@
 				F4973AB21A21DD6D00E2F44E /* ViewController.swift */,
 				F4973AB41A21DD6D00E2F44E /* Main.storyboard */,
 				F4973AB71A21DD6D00E2F44E /* Images.xcassets */,
+				C914C80A1F73D6C400AA87B0 /* Gemalto (1).png */,
 				F4973AB91A21DD6D00E2F44E /* LaunchScreen.xib */,
 				F4973AAE1A21DD6D00E2F44E /* Supporting Files */,
 				C914C7591F73656D00AA87B0 /* ParseQRCode.swift */,
@@ -505,14 +588,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C914C7E51F73A90400AA87B0 /* tvOS-Info.plist in Resources */,
+				C914C7E31F73A90400AA87B0 /* Smoke.png in Resources */,
 				C914C7B91F73A21600AA87B0 /* Proxima Nova Regular.otf in Resources */,
 				C914C7721F73898500AA87B0 /* Info.plist in Resources */,
 				C914C7B81F73A21600AA87B0 /* Code Pro LC.otf in Resources */,
 				F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */,
 				C914C7AE1F739CCE00AA87B0 /* Info.plist in Resources */,
 				C914C7B31F739D3400AA87B0 /* TabMain.storyboard in Resources */,
+				C914C7E11F73A90400AA87B0 /* Fire.png in Resources */,
+				C914C7E21F73A90400AA87B0 /* Fragment.png in Resources */,
+				C914C80B1F73D6C400AA87B0 /* Gemalto (1).png in Resources */,
 				F4973ABB1A21DD6D00E2F44E /* LaunchScreen.xib in Resources */,
 				F4973AB81A21DD6D00E2F44E /* Images.xcassets in Resources */,
+				C914C7E41F73A90400AA87B0 /* Sparkle.png in Resources */,
 				C914C7741F7389B000AA87B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,26 +622,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				C914C7AC1F739CCE00AA87B0 /* YALFoldingTabBarController.m in Sources */,
+				C914C7DC1F73A90400AA87B0 /* LTMorphingLabel+Fall.swift in Sources */,
 				C914C7A81F739CCE00AA87B0 /* YALSpringAnimation.m in Sources */,
 				C914C7BB1F73A58300AA87B0 /* LandingViewController.swift in Sources */,
+				C914C7DD1F73A90400AA87B0 /* LTMorphingLabel+Pixelate.swift in Sources */,
+				C914C7D91F73A90400AA87B0 /* LTMorphingLabel+Anvil.swift in Sources */,
 				C914C7A91F739CCE00AA87B0 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */,
+				C914C7D41F73A90400AA87B0 /* LTCharacterDiffResult.swift in Sources */,
+				C914C7E01F73A90400AA87B0 /* LTStringDiffResult.swift in Sources */,
+				C914C7D61F73A90400AA87B0 /* LTEasing.swift in Sources */,
+				C914C7DF1F73A90400AA87B0 /* LTMorphingLabel.swift in Sources */,
+				C914C7D71F73A90400AA87B0 /* LTEmitterView.swift in Sources */,
 				F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */,
+				C914C7DE1F73A90400AA87B0 /* LTMorphingLabel+Sparkle.swift in Sources */,
 				C914C7691F73896000AA87B0 /* Constraints+.swift in Sources */,
 				C914C76E1F73896000AA87B0 /* Spark.swift in Sources */,
 				C914C77A1F738A5600AA87B0 /* FavViewController.swift in Sources */,
 				C914C7B01F739CCE00AA87B0 /* YALFoldingTabBar.m in Sources */,
 				C914C76C1F73896000AA87B0 /* Init.swift in Sources */,
+				C914C7D81F73A90400AA87B0 /* LTMorphingEffect.swift in Sources */,
 				C914C7AD1F739CCE00AA87B0 /* YALTabBarItem.m in Sources */,
+				C914C7DA1F73A90400AA87B0 /* LTMorphingLabel+Burn.swift in Sources */,
 				C914C7AA1F739CCE00AA87B0 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				C914C75C1F73842600AA87B0 /* SuccesViewController.swift in Sources */,
 				C914C75A1F73656D00AA87B0 /* ParseQRCode.swift in Sources */,
 				C914C7681F73896000AA87B0 /* FaveIcon.swift in Sources */,
+				C914C7D51F73A90400AA87B0 /* LTCharacterLimbo.swift in Sources */,
 				C914C76A1F73896000AA87B0 /* Easing.swift in Sources */,
 				C914C76B1F73896000AA87B0 /* Geometry.swift in Sources */,
 				C914C7AF1F739CCE00AA87B0 /* YALCustomHeightTabBar.m in Sources */,
 				C914C7AB1F739CCE00AA87B0 /* YALAnimatingTabBarConstants.m in Sources */,
 				C914C76D1F73896000AA87B0 /* Ring.swift in Sources */,
+				C914C7DB1F73A90400AA87B0 /* LTMorphingLabel+Evaporate.swift in Sources */,
 				C914C7671F73896000AA87B0 /* FaveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
