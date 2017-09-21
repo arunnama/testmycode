@@ -125,6 +125,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
     {
         print("Original QR Code",qrcode);
         let dict = convertStringToDictionary(text: qrcode)
+       
         for (key, value) in dict! {
         // access all key / value pairs in dictionary
         print("key is - \(key) and value is - \(value)")
@@ -137,6 +138,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SuccesViewController") as! SuccesViewController
         let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.setNavigationBarHidden(true, animated: true)
         self.present(navigationController, animated: true, completion: nil)
         
         

@@ -45,8 +45,8 @@ class LandingViewController : UIViewController, LTMorphingLabelDelegate,UIViewCo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.view.backgroundColor = UIColor(gradientStyle:UIGradientStyle.topToBottom, withFrame:self.view.bounds, andColors:[UIColor.flatOrange,UIColor.flatOrangeDark])
+        
+        self.view.backgroundColor = UIColor.black;
        // label.delegate = self
         if let effect = LTMorphingEffect(rawValue: 2) {
           //  label.morphingEffect = effect
