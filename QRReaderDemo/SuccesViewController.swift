@@ -10,7 +10,7 @@ import UIKit
 
 class SuccesViewController: UIViewController {
 
-    
+    var qrcodeData : Dictionary<String, Any> = [:];
     
     @IBOutlet weak var IDImage: UIImageView!
     @IBOutlet weak var name: UILabel!
@@ -19,11 +19,19 @@ class SuccesViewController: UIViewController {
     
     @IBOutlet weak var expDateValue: UILabel!
     
+    @IBOutlet weak var type: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        "✓"
+        print(self.qrcodeData);
+        super.viewDidLoad();
+        
+        self.name.text=self.qrcodeData["name"] as? String
+        self.IDValue.text=self.qrcodeData["id"] as? String
+        self.expDateValue.text=self.qrcodeData["expDate"] as? String
+        
+            self.type.text=self.qrcodeData["type"] as? String
+        
         // Do any additional setup after loading the view.
     }
 

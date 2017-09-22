@@ -123,6 +123,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
     
     func parQRCode(withQRCodeString qrcode: String)
     {
+        
         print("Original QR Code",qrcode);
         let dict = convertStringToDictionary(text: qrcode)
        
@@ -130,13 +131,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
         // access all key / value pairs in dictionary
         print("key is - \(key) and value is - \(value)")
         }
-        
-        showLoadingScreenToSendRequest(dictData:dict!);
+        self.showNewScreenToSendRequest(dictData:dict!);
+      //  showLoadingScreenToSendRequest(dictData:dict!);
     }
     
     func showNewScreenToSendRequest(dictData:Dictionary<String, Any>){
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SuccesViewController") as! SuccesViewController
+        
+        vc.qrcodeData=dictData;
+        
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.setNavigationBarHidden(true, animated: true)
         self.present(navigationController, animated: true, completion: nil)
@@ -147,6 +151,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
     func showLoadingScreenToSendRequest(dictData:Dictionary<String, Any>)
     {
         
+        self.showNewScreenToSendRequest(dictData:dictData);
+        /*
         let todosEndpoint: String = "https://jsonplaceholder.typicode.com/todos"
         guard let todosURL = URL(string: todosEndpoint) else {
             print("Error: cannot create URL")
@@ -203,7 +209,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
         }
         task.resume()
         
-        
+       */
         
         
         
