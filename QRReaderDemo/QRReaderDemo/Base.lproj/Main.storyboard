@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EKC-We-R6l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rd5-Is-hDh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -305,13 +305,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="rd5-Is-hDh" kind="relationship" relationship="viewControllers" id="4wE-ob-9B4"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rz0-tU-w6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3503" y="-247"/>
+            <point key="canvasLocation" x="-3655" y="-945"/>
         </scene>
         <!--Item-->
         <scene sceneID="986-y9-oX5">
@@ -440,10 +437,9 @@
     <resources>
         <image name="id-card.png" width="512" height="512"/>
         <image name="like" width="128" height="128"/>
-        <image name="qr-code.png" width="2320" height="2320"/>
+        <image name="qr-code.png" width="1155" height="1155"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EaW-5L-hkZ"/>
         <segue reference="kAD-k8-ybp"/>
         <segue reference="bPJ-8T-eNl"/>
     </inferredMetricsTieBreakers>

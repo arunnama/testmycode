@@ -112,9 +112,11 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
                 messageLabel.text = "Successfully captured your QR Code!"
                 captureSession?.stopRunning();
                 print("Stopped the QR CODE SCANNING");
-                parQRCode(withQRCodeString :metadataObj.stringValue);
                 okayButton.isHidden=false;
                 okayButton.sendActions(for: .touchUpInside)
+               // Thread.sleep(forTimeInterval: 2);
+                parQRCode(withQRCodeString :metadataObj.stringValue);
+
                 
             }
         }
@@ -131,6 +133,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate,F
         // access all key / value pairs in dictionary
         print("key is - \(key) and value is - \(value)")
         }
+        
+
         self.showNewScreenToSendRequest(dictData:dict!);
       //  showLoadingScreenToSendRequest(dictData:dict!);
     }
