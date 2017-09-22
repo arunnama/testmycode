@@ -17,25 +17,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2017 Digi-X-ID. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="20" y="443" width="441" height="17"/>
+                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digi-X-ID" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <rect key="frame" x="20" y="135" width="441" height="52"/>
+                    <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="52"/>
+                    <color key="textColor" red="0.94519752264022827" green="0.54276365041732788" blue="0.1549321711063385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gemalto" translatesAutoresizingMaskIntoConstraints="NO" id="YMX-vQ-iTh">
-                    <rect key="frame" x="20" y="224" width="440" height="128"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="128" id="aNb-lR-iNv"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gemalto" translatesAutoresizingMaskIntoConstraints="NO" id="YMX-vQ-iTh">
+                    <rect key="frame" x="77" y="223" width="327" height="73"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.90068227052688599" green="0.94079238176345825" blue="0.97412592172622681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YMX-vQ-iTh" firstAttribute="leading" secondItem="8ie-xW-0ye" secondAttribute="leading" id="28b-Bp-yfw"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>

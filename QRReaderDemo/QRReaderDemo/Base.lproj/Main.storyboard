@@ -364,8 +364,8 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2017 Digi-X-ID. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r55-Id-wp1">
-                                <rect key="frame" x="10" y="646" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="10" y="654.5" width="355" height="12.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -410,7 +410,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0007474908294377797" green="0.02732091587815803" blue="0.16334949411111432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gd2-lc-nMl" secondAttribute="bottom" constant="140" id="9zv-EC-cfa"/>
                             <constraint firstItem="pkO-2U-Ung" firstAttribute="top" secondItem="cRg-1X-mTg" secondAttribute="bottom" constant="29.5" id="AZg-l1-el2"/>
@@ -427,7 +427,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="fgI-Kg-0au"/>
                     <navigationItem key="navigationItem" id="gzb-vD-zIa"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="labelTest" destination="pkO-2U-Ung" id="1mA-Fq-PS9"/>
                     </connections>
@@ -444,7 +444,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EaW-5L-hkZ"/>
-        <segue reference="hSU-oY-f7k"/>
         <segue reference="kAD-k8-ybp"/>
+        <segue reference="bPJ-8T-eNl"/>
     </inferredMetricsTieBreakers>
 </document>
